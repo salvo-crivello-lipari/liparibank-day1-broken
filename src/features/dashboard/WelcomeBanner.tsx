@@ -8,7 +8,7 @@ const user = {
 const WelcomeBanner = () => {
 	return (
 		<div className={styles.banner}>
-			<h2 className={styles.title}>Benvenuto, {user}!</h2>
+			<h2 className={styles.title}>Benvenuto, {user.name}!</h2>
 			<p className={styles.subtitle}>Ruolo: {user.role}</p>
 		</div>
 	);
