@@ -1,18 +1,20 @@
+import ToggleThemeButton from './ToggleThemeButton/ToggleThemeButton';
 import styles from './Header.module.css';
 
 const Header = () => {
-  return (
-    <header className={styles.header}>
-      <div className={styles.logo}>
-        <span className={styles.logoIcon}>🏦</span>
-        <span className={styles.logoText}>LipariBank</span>
-      </div>
-      <div className={styles.userInfo}>
-        <span className={styles.greeting}>Benvenuto,</span>
-        <span className={styles.userName}>Mario Rossi</span>
-      </div>
-    </header>
-  );
+	return (
+		<header className={styles.header}>
+			<div className={styles.logo}>
+				<span className={styles.logoIcon}>🏦</span>
+				<span className={styles.logoText}>LipariBank</span>
+			</div>
+			<div className={styles.userInfo}>
+				<span className={styles.greeting}>Benvenuto,</span>
+				<span className={styles.userName}>Mario Rossi</span>
+			</div>
+			<ToggleThemeButton />
+		</header>
+	);
 };
 
 export default Header;
